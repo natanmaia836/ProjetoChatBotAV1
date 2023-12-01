@@ -1,0 +1,14 @@
+C:\Projetos\ProjetoChatBot\bin\Debug\net8.0\ProjetoChatBot.exe
+C:\Projetos\ProjetoChatBot\bin\Debug\net8.0\ProjetoChatBot.deps.json
+C:\Projetos\ProjetoChatBot\bin\Debug\net8.0\ProjetoChatBot.runtimeconfig.json
+C:\Projetos\ProjetoChatBot\bin\Debug\net8.0\ProjetoChatBot.dll
+C:\Projetos\ProjetoChatBot\bin\Debug\net8.0\ProjetoChatBot.pdb
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\ProjetoChatBot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\ProjetoChatBot.AssemblyInfoInputs.cache
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\ProjetoChatBot.AssemblyInfo.cs
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\ProjetoChatBot.csproj.CoreCompileInputs.cache
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\ProjetoChatBot.dll
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\refint\ProjetoChatBot.dll
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\ProjetoChatBot.pdb
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\ProjetoChatBot.genruntimeconfig.cache
+C:\Projetos\ProjetoChatBot\obj\Debug\net8.0\ref\ProjetoChatBot.dll
