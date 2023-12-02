@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Classe base para representar uma mensagem
+
 public abstract class Mensagem
 {
     public string Conteudo { get; set; }
@@ -15,9 +15,7 @@ public abstract class Mensagem
     public abstract void EnviarMensagem();
 }
 
-// Classes derivadas para representar mensagens específicas
 
-// Mensagem de texto
 public class MensagemTexto : Mensagem
 {
     public MensagemTexto(string conteudo) : base(conteudo) { }
@@ -28,7 +26,7 @@ public class MensagemTexto : Mensagem
     }
 }
 
-// Mensagem de vídeo
+
 public class MensagemVideo : Mensagem
 {
     public string Arquivo { get; set; }
@@ -49,7 +47,7 @@ public class MensagemVideo : Mensagem
     }
 }
 
-// Mensagem de foto
+
 public class MensagemFoto : Mensagem
 {
     public string Arquivo { get; set; }
@@ -64,11 +62,11 @@ public class MensagemFoto : Mensagem
 
     public override void EnviarMensagem()
     {
-        Console.WriteLine($"A foto de titulo: {Conteudo}, Arquivo: {Arquivo}, Formato: {Formato}, foi enviada em {DataEnvio}");
+        Console.WriteLine($"Mensagem de foto: {Conteudo}, Arquivo: {Arquivo}, Formato: {Formato}, foi enviada em {DataEnvio}");
     }
 }
 
-// Mensagem de arquivo
+
 public class MensagemArquivo : Mensagem
 {
     public string Arquivo { get; set; }
@@ -87,19 +85,17 @@ public class MensagemArquivo : Mensagem
     }
 }
 
-// Classe principal para representar o canal de comunicação
+
 public abstract class CanalComunicacao
 {
     public string Destinatario { get; set; }
     public abstract void EnviarMensagem(Mensagem mensagem);
 }
 
-// Classes derivadas para representar canais específicos
 
-// Canal de WhatsApp
 public class CanalWhatsApp : CanalComunicacao
 {
-    // Restante do código...
+   
 
     public override void EnviarMensagem(Mensagem mensagem)
     {
@@ -110,7 +106,6 @@ public class CanalWhatsApp : CanalComunicacao
 
 public class CanalTelegram : CanalComunicacao
 {
-    // Restante do código...
 
     public override void EnviarMensagem(Mensagem mensagem)
     {
@@ -121,7 +116,6 @@ public class CanalTelegram : CanalComunicacao
 
 public class CanalFacebook : CanalComunicacao
 {
-    // Restante do código...
 
     public override void EnviarMensagem(Mensagem mensagem)
     {
@@ -132,7 +126,7 @@ public class CanalFacebook : CanalComunicacao
 
 public class CanalInstagram : CanalComunicacao
 {
-    // Restante do código...
+
 
     public override void EnviarMensagem(Mensagem mensagem)
     {
@@ -158,7 +152,7 @@ switch (canal)
 {
     case "whatsapp":
         canalComunicacao = new CanalWhatsApp();
-        Console.WriteLine("Informe o telefone de quem você deseja enviar a mensagem:");
+        Console.WriteLine("Informe o telefone do usuário que deseja enviar a mensagem:");
         canalComunicacao.Destinatario = Console.ReadLine();
         break;
         case "telegram":
@@ -216,14 +210,14 @@ switch (tipoMensagem)
         mensagem = new MensagemVideo(conteudo, arquivoVideo, formatoVideo, TimeSpan.FromMinutes(duracaoVideo));
         break;
     case "foto":
-        Console.WriteLine("Digite o arquivo da foto:");
+        Console.WriteLine("Digite o nome do arquivo de foto:");
         string arquivoFoto = Console.ReadLine();
         Console.WriteLine("Digite o formato da foto:");
         string formatoFoto = Console.ReadLine();
         mensagem = new MensagemFoto(conteudo, arquivoFoto, formatoFoto);
         break;
     case "arquivo":
-        Console.WriteLine("Digite o arquivo:");
+        Console.WriteLine("Digite o nome do arquivo:");
         string arquivo = Console.ReadLine();
         Console.WriteLine("Digite o formato do arquivo:");
         string formato = Console.ReadLine();
@@ -234,8 +228,6 @@ switch (tipoMensagem)
         return;
 }
 
-
-        // Enviar a mensagem através do canal selecionado
         canalComunicacao.EnviarMensagem(mensagem);
     }
 }

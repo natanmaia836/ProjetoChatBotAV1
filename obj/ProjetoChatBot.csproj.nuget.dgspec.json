@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\ProjetoChatBot\\ProjetoChatBot.csproj": {}
+    "C:\\Projetos\\ProjetoChatBotAV1\\ProjetoChatBot.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\ProjetoChatBot\\ProjetoChatBot.csproj": {
+    "C:\\Projetos\\ProjetoChatBotAV1\\ProjetoChatBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\ProjetoChatBot\\ProjetoChatBot.csproj",
+        "projectUniqueName": "C:\\Projetos\\ProjetoChatBotAV1\\ProjetoChatBot.csproj",
         "projectName": "ProjetoChatBot",
-        "projectPath": "C:\\Projetos\\ProjetoChatBot\\ProjetoChatBot.csproj",
-        "packagesPath": "C:\\Users\\NATAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\ProjetoChatBot\\obj\\",
+        "projectPath": "C:\\Projetos\\ProjetoChatBotAV1\\ProjetoChatBot.csproj",
+        "packagesPath": "C:\\Users\\natan.maia\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\ProjetoChatBotAV1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NATAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\natan.maia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
